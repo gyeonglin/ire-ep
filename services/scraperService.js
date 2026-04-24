@@ -98,10 +98,9 @@ function transformToEpData(rawData) {
   ].filter(Boolean);
 
   // 링크 생성
-  const productCode = data.productCode2 || data.computedProductCode || '';
   const groupNumber = data.groupNumber || '';
-  const link = productCode
-    ? `https://www.modetour.com/package/detail/${productCode}?group=${groupNumber}`
+  const link = groupNumber
+    ? `https://ire.modetour.co.kr/package/${groupNumber}`
     : '';
 
   // coupon 조합
